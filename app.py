@@ -204,8 +204,8 @@ with ui.nav_panel("Чат-бот", icon=icon_svg('robot')):
                     if not vector_store_file.exists():
                         await chat.append_message("Данные не обработаны. Пожалуйста, нажмите кнопку 'Обработать и векторизовать данные'.")
                         return
-                except:
-                    await chat.append_message('Данные не загружены, пожалуйста, загрузите')
+                except Exception as e:
+                    await chat.append_message(f'Данные не загружены, пожалуйста, загрузите: {e}')
                     return
 
                 try:
