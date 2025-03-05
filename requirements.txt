@@ -16,5 +16,3 @@ shiny==1.2.1
 shinyswatch==0.8.0
 shinywidgets==0.5.1
 openpyxl==3.1.2
-pathlib
-shutil
